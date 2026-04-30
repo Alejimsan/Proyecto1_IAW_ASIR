@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - CrossFit Córdoba Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>CrossFit Córdoba Shop</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="producto.html">Producto</a>
+                <a href="contacto.html" class="active">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="formulario-contacto">
+            <h2>Contacta con Nosotros</h2>
+            <p>¿Tienes alguna duda sobre tu pedido o nuestras camisetas? Rellena el formulario y te responderemos lo antes posible.</p>
+            
+            <div id="mensaje-error" class="mensaje-error"></div>
+            <div id="mensaje-exito" class="mensaje-exito"></div>
+
+            <form id="formContacto">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email">Dirección de correo electrónico:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                </div>
+
+                <div class="contenedor-boton">
+                    <button type="button" class="boton-principal" onclick="validarFormulario()">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CrossFit Córdoba</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

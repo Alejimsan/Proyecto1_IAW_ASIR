@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - CrossFit Córdoba Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>CrossFit Córdoba Shop</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="producto.html" class="active">Producto</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="producto-unico">
+            
+            <div class="galeria-producto">
+                <img id="imagen-principal" src="images/Camiseta_CFC.jpg" alt="Vista principal">
+                
+                <div class="miniaturas">
+                    <img src="images/Camiseta_CFC.jpg" alt="Vista 1" onclick="cambiarImagen(this.src)">
+                    <img src="images/Camiseta_CFC_2.jpg" alt="Vista 2" onclick="cambiarImagen(this.src)">
+                    <img src="images/Camiseta_CFC_3.jpg" alt="Vista 3" onclick="cambiarImagen(this.src)">
+                    <img src="images/Camiseta_CFC_4.jpg" alt="Vista 4" onclick="cambiarImagen(this.src)">
+                    <img src="images/Camiseta_CFC_5.jpg" alt="Vista 5" onclick="cambiarImagen(this.src)">
+                    <img src="images/Camiseta_CFC_6.jpg" alt="Vista 6" onclick="cambiarImagen(this.src)">
+                </div>
+            </div>
+
+            <div class="producto-info">
+                <h2>Camiseta Córdoba Fitness Community</h2>
+                <p class="precio">25.00 €</p>
+                <p class="descripcion">
+                    Camiseta oficial de la comunidad. Diseño exclusivo inspirado en la icónica arquería de la Mezquita adaptada a nuestro box. Fabricada para el máximo rendimiento en tus entrenamientos o para el día a día.
+                </p>
+                
+                <div class="opciones-compra">
+                    <label for="talla">Selecciona tu talla:</label>
+                    <select id="talla" name="talla">
+                        <option value="s">Talla S</option>
+                        <option value="m">Talla M</option>
+                        <option value="l">Talla L</option>
+                        <option value="xl">Talla XL</option>
+                    </select>
+                </div>
+
+                <button class="boton-principal" onclick="agregarCarrito()">Agregar al carrito</button>
+                <p id="mensaje-carrito" style="color: green; margin-top: 15px; font-weight: bold;"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CrossFit Córdoba</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

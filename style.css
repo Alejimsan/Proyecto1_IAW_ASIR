@@ -1,0 +1,429 @@
+/* style.css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+nav a:hover, nav a.active {
+    background-color: #b30000;
+    color: white;
+}
+
+main {
+    flex: 1;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.portada-hero {
+    height: 250px;
+    background-color: #333;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(204, 204, 204, 0.2));
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.portada-texto {
+    text-align: center;
+    max-width: 80%;
+}
+
+.portada-texto h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: white;
+}
+
+.portada-texto p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.producto-destacado-portada {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.producto-destacado-portada h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.destacado-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.destacado-contenedor img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.destacado-info {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.destacado-info h3 {
+    font-size: 24px;
+    margin-top: 0;
+    color: #b30000;
+}
+
+.destacado-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.destacado-info .boton-tarjeta {
+    width: auto;
+    max-width: none;
+}
+
+.intro-tienda {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-tienda p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.producto-unico {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.galeria-producto {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#imagen-principal {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.miniaturas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.miniaturas img {
+    width: 60px;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.miniaturas img:hover {
+    border-color: #b30000;
+}
+
+.producto-info {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.producto-info h2 {
+    font-size: 32px;
+    margin-top: 0;
+    color: #1a1a1a;
+}
+
+.producto-info .precio {
+    font-size: 28px;
+    color: #b30000;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.producto-info .descripcion {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.opciones-compra {
+    margin: 25px 0;
+}
+
+.opciones-compra label {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.opciones-compra select {
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+.boton-principal, .boton-tarjeta {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: none;
+    background-color: #b30000;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.boton-principal {
+    width: 100%;
+    max-width: 250px;
+}
+
+.boton-tarjeta {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.boton-principal:hover {
+    background-color: #800000;
+}
+
+.boton-tarjeta:hover {
+    background-color: #1a1a1a;
+}
+
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.formulario-contacto h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formulario-contacto p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.campo-formulario {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.campo-formulario label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+.campo-formulario input, 
+.campo-formulario textarea {
+    width: 100%;
+    display: block;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.campo-formulario textarea {
+    resize: vertical;
+}
+
+.contenedor-boton {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.mensaje-error {
+    color: #b30000;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.mensaje-exito {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* --- DISEÑO RESPONSIVE --- */
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .portada-texto h2 {
+        font-size: 28px;
+    }
+
+    .portada-texto p {
+        font-size: 16px;
+    }
+
+    .destacado-contenedor {
+        flex-direction: column;
+    }
+
+    .producto-unico {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .galeria-producto {
+        min-width: 100%;
+    }
+
+    .producto-info h2 {
+        font-size: 24px;
+    }
+}
